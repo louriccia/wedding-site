@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah &amp; Louis | June 12, 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="wisteria/flower 1.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="header-monogram">SLS &amp; LCL</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#our-story">Our Story</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">Q&amp;A</a></li>
+          <li><a href="#links" class="nav-cta">RSVP &amp; More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <img class="hero-botanical hero-botanical--right" src="wisteria/wisteria.png" alt="" aria-hidden="true" />
+    <img class="hero-botanical hero-botanical--left" src="wisteria/wisteria.png" alt="" aria-hidden="true" />
+    <div class="hero-content">
+      <h1 class="hero-names fade-in visible">Sarah <span class="ampersand">&amp;</span> Louis</h1>
+      <p class="hero-eyebrow">Saturday, June 12, 2027 / Portland, OR</p>
+      <a href="#links" class="btn btn-outline rsvp-open">RSVP Now</a>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-bar">
+    <div class="countdown-inner">
+      <div class="countdown-unit"><span id="cd-days">--</span><label>Days</label></div>
+      <div class="countdown-sep" aria-hidden="true">&middot;</div>
+      <div class="countdown-unit"><span id="cd-hours">--</span><label>Hours</label></div>
+      <div class="countdown-sep" aria-hidden="true">&middot;</div>
+      <div class="countdown-unit"><span id="cd-minutes">--</span><label>Minutes</label></div>
+      <div class="countdown-sep" aria-hidden="true">&middot;</div>
+      <div class="countdown-unit"><span id="cd-seconds">--</span><label>Seconds</label></div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="section" id="our-story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image">
+          <img class="story-photo" src="selfies/download_20210213_140606.webp" alt="" aria-hidden="true" />
+          <img class="story-photo" src="selfies/download_20210213_140606.webp" alt="Sarah and Louis" />
+          <div class="story-slide-caption">
+            <span class="story-slide-date"></span>
+            <span class="story-slide-location"></span>
+          </div>
+        </div>
+        <div class="story-content">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">How It All Began</h2>
+          <div class="story-text">
+            <!-- <p class="story-lead">Something something, fell in love...</p> -->
+            <p>While attending rival colleges at the peak of the COVID pandemic, Sarah and Louis connected through a
+              dating app. They first met at a coffee shop halfway between
+              Eugene and Corvallis and hit it off. After a series of virtual dates, the connection grew through their
+              shared love of board/party games, puzzles, and cats as they took turns traveling an hour to see each
+              other.</p>
+            <p>The next few years were filled with adventures, laughter, some tears, and a lot of cat care. Eventually,
+              the two decided to relocate to North Carolina where they now live.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 6.png" alt="" aria-hidden="true">
+              <div class="timeline-date">November 2020</div>
+              <div class="timeline-body">
+                <h3>It's a match!</h3>
+                <p>Sarah and Louis first started talking on the dating app Hinge. Louis made the first move.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 5.png" alt="" aria-hidden="true">
+              <div class="timeline-date">December 2020</div>
+              <div class="timeline-body">
+                <h3>Our first date</h3>
+                <p>Sarah and Louis went on their first date at an Italian restaurant.</p>
+              </div>
+            </div>
+            <!-- <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 2.png" alt="" aria-hidden="true">
+              <div class="timeline-date">June 2022</div>
+              <div class="timeline-body">
+                <h3>Sarah moves to Eugene</h3>
+                <p>Sarah moves from Albany to Eugene to be closer to Louis.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 2.png" alt="" aria-hidden="true">
+              <div class="timeline-date">January 2024</div>
+              <div class="timeline-body">
+                <h3>Louis moves in</h3>
+                <p>Louis (and his cat) move in with Sarah (and her cats) in Eugene, OR.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 1.png" alt="" aria-hidden="true">
+              <div class="timeline-date">July 2024</div>
+              <div class="timeline-body">
+                <h3>Sarah and Louis move to North Carolina</h3>
+                <p>Sarah and Louis move across the country from Oregon to North Carolina.</p>
+              </div>
+            </div> -->
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 2.png" alt="" aria-hidden="true">
+              <div class="timeline-date">December 2025</div>
+              <div class="timeline-body">
+                <h3>The Proposal</h3>
+                <p>Placeholder description of the engagement story.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-dot" src="wisteria/flower 8.png" alt="" aria-hidden="true">
+              <div class="timeline-date">June 12, 2027</div>
+              <div class="timeline-body">
+                <h3>The Wedding</h3>
+                <p>We can&rsquo;t wait to celebrate with you!</p>
+              </div>
+            </div><!-- /.timeline -->
+          </div><!-- /.story-content -->
+        </div><!-- /.story-grid -->
+      </div><!-- /.container -->
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section section-alt" id="events">
+    <div class="container">
+      <div class="section-label">Events</div>
+      <h2 class="section-title">The Wedding Weekend</h2>
+      <div class="events-grid">
+
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+          </div>
+          <h3>Ceremony</h3>
+          <p class="event-detail"><strong>Date:</strong> Friday, June 12, 2027</p>
+          <p class="event-detail"><strong>Time:</strong> 4:00 PM</p>
+          <p class="event-detail"><strong>Venue:</strong> Placeholder Ceremony Venue</p>
+          <p class="event-detail"><strong>Address:</strong> 123 Placeholder Street, City, State 00000</p>
+          <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
+        </article>
+
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path
+                d="M12 3v1m0 16v1M4.22 4.22l.71.71m14.14 14.14.71.71M3 12H2m20 0h-1M4.22 19.78l.71-.71M18.36 5.64l.71-.71" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </div>
+          <h3>Cocktail Hour</h3>
+          <p class="event-detail"><strong>Date:</strong> Friday, June 12, 2027</p>
+          <p class="event-detail"><strong>Time:</strong> 5:30 PM</p>
+          <p class="event-detail"><strong>Venue:</strong> Placeholder Reception Venue</p>
+          <p class="event-detail"><strong>Address:</strong> 456 Placeholder Avenue, City, State 00000</p>
+          <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
+        </article>
+
+        <article class="event-card">
+          <div class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+              <path
+                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+            </svg>
+          </div>
+          <h3>Reception</h3>
+          <p class="event-detail"><strong>Date:</strong> Friday, June 12, 2027</p>
+          <p class="event-detail"><strong>Time:</strong> 6:30 PM &ndash; 11:00 PM</p>
+          <p class="event-detail"><strong>Venue:</strong> Placeholder Reception Venue</p>
+          <p class="event-detail"><strong>Address:</strong> 456 Placeholder Avenue, City, State 00000</p>
+          <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-item--wide" data-index="0" aria-label="View photo 1">
+          <img src="main/image0.webp" alt="Sarah and Louis on the beach at sunset" loading="lazy">
+        </button>
+        <button class="gallery-item gallery-item--tall" data-index="1" aria-label="View photo 2">
+          <img src="main/image3.webp" alt="Sarah and Louis at the beach" loading="lazy">
+        </button>
+        <button class="gallery-item gallery-item--tall" data-index="2" aria-label="View photo 3">
+          <img src="main/PXL_20240930_004135553.webp" alt="Sarah and Louis in the forest" loading="lazy">
+        </button>
+        <button class="gallery-item gallery-item--wide" data-index="3" aria-label="View photo 4">
+          <img src="main/image1.webp" alt="Sarah and Louis dancing on the dunes" loading="lazy">
+        </button>
+
+        <button class="gallery-item gallery-item--wide" data-index="4" aria-label="View photo 5">
+          <img src="main/Louis&Sarah-SneakPeek-3.webp" alt="Louis proposing to Sarah on the beach" loading="lazy">
+        </button>
+        <button class="gallery-item gallery-item--tall" data-index="6" aria-label="View photo 7">
+          <img src="main/image2.webp" alt="Sarah and Louis at a cafe" loading="lazy">
+        </button>
+        <button class="gallery-item gallery-item--wide" data-index="5" aria-label="View photo 6">
+          <img src="main/image4.webp" alt="Sarah and Louis under cherry blossoms" loading="lazy">
+        </button>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8592;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <span id="lightbox-label" class="sr-only">Photo</span>
+    </div>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">&#8594;</button>
+  </div>
+
+  <!-- RSVP MODAL -->
+  <div class="rsvp-modal" id="rsvp-modal" role="dialog" aria-modal="true" aria-labelledby="rsvp-modal-title" hidden>
+    <div class="rsvp-modal-backdrop"></div>
+    <div class="rsvp-modal-panel">
+      <button class="rsvp-modal-close" id="rsvp-close" aria-label="Close">&times;</button>
+
+      <div class="section-label">RSVP</div>
+      <h2 class="section-title" id="rsvp-modal-title">We&rsquo;d Love to Hear From You</h2>
+
+      <form id="rsvp-form" class="rsvp-form" novalidate>
+        <div class="rsvp-field">
+          <label for="rsvp-name">Full Name <span class="rsvp-required">*</span></label>
+          <input type="text" id="rsvp-name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="rsvp-field">
+          <label for="rsvp-email">Email <span class="rsvp-required">*</span></label>
+          <input type="email" id="rsvp-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="rsvp-field">
+          <label for="rsvp-attending">Will You Be Attending? <span class="rsvp-required">*</span></label>
+          <select id="rsvp-attending" name="attending" required>
+            <option value="">Please select&hellip;</option>
+            <option value="yes">Joyfully Accepts</option>
+            <option value="no">Regretfully Declines</option>
+          </select>
+        </div>
+
+        <div id="rsvp-attending-fields" class="rsvp-conditional" hidden>
+          <div class="rsvp-field">
+            <label for="rsvp-guests">Number of Guests (including yourself)</label>
+            <select id="rsvp-guests" name="guests">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+
+          <div class="rsvp-field">
+            <label for="rsvp-meal">Meal Preference</label>
+            <select id="rsvp-meal" name="meal">
+              <option value="">Please select&hellip;</option>
+              <option value="option-a">Option A</option>
+              <option value="option-b">Option B</option>
+              <option value="option-c">Option C</option>
+            </select>
+          </div>
+
+          <div class="rsvp-field">
+            <label for="rsvp-dietary">Dietary Restrictions or Allergies</label>
+            <textarea id="rsvp-dietary" name="dietary" rows="2"
+              placeholder="e.g., gluten-free, nut allergy&hellip;"></textarea>
+          </div>
+
+          <div class="rsvp-field">
+            <label for="rsvp-song">Song Request <span class="rsvp-optional">(optional)</span></label>
+            <input type="text" id="rsvp-song" name="song" placeholder="What song gets you on the dance floor?">
+          </div>
+        </div>
+
+        <button type="submit" class="btn rsvp-submit" id="rsvp-submit">
+          <span class="rsvp-submit-text">Send RSVP</span>
+          <span class="rsvp-submit-loading" hidden>Sending&hellip;</span>
+        </button>
+      </form>
+
+      <div id="rsvp-success" class="rsvp-message" hidden>
+        <div class="rsvp-message-icon">&#10003;</div>
+        <h3>Thank You!</h3>
+        <p>Your RSVP has been received. We can&rsquo;t wait to celebrate with you!</p>
+      </div>
+
+      <div id="rsvp-error" class="rsvp-message" hidden>
+        <div class="rsvp-message-icon rsvp-message-icon--error">!</div>
+        <h3>Something Went Wrong</h3>
+        <p>Please try again, or contact us directly.</p>
+        <button class="btn btn-ghost" id="rsvp-retry">Try Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section-label">Q&amp;A</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-question">When is the RSVP deadline?</summary>
+          <div class="faq-answer">
+            <p>Please RSVP by <strong>May 1, 2027</strong>. You can RSVP using the link in the section below.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What is the dress code?</summary>
+          <div class="faq-answer">
+            <p>The dress code is <strong>black tie optional</strong>. We encourage you to dress up and celebrate with
+              us! Cocktail attire is welcome.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Are children welcome?</summary>
+          <div class="faq-answer">
+            <p>Placeholder answer about children at the wedding. We love your little ones and [will/won't] be
+              accommodating children at the event.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Is there parking available?</summary>
+          <div class="faq-answer">
+            <p>Placeholder parking information. Complimentary/paid parking is available at [venue name].
+              Valet/self-parking details here.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Are there hotel room blocks available?</summary>
+          <div class="faq-answer">
+            <p>Yes! We have reserved a block of rooms at <strong>Placeholder Hotel</strong>. Use the code
+              <strong>PLACEHOLDER</strong> when booking for a discounted rate. Book by <strong>May 1, 2027</strong>.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Will there be transportation between venues?</summary>
+          <div class="faq-answer">
+            <p>Placeholder transportation information. A shuttle will/won&rsquo;t be available between [ceremony venue]
+              and [reception venue].</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Can I take photos during the ceremony?</summary>
+          <div class="faq-answer">
+            <p>We are having an [unplugged/plugged-in] ceremony. Placeholder details about photography policy during the
+              ceremony and reception.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What if I have dietary restrictions?</summary>
+          <div class="faq-answer">
+            <p>Please note any dietary restrictions or allergies on your RSVP form and we will do our best to
+              accommodate you.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT LINKS -->
+  <section class="section" id="links">
+    <div class="container">
+      <div class="section-label">Get Involved</div>
+      <h2 class="section-title">Important Links</h2>
+      <p class="links-intro">Everything you need, all in one place.</p>
+      <div class="links-grid">
+
+        <a href="#" class="link-card link-card--featured rsvp-open">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M20 12V22H4V12" />
+              <path d="M22 7H2v5h20V7z" />
+              <path d="M12 22V7" />
+              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+            </svg>
+          </div>
+          <h3>RSVP</h3>
+          <p>Let us know you&rsquo;re coming. Deadline: May 1, 2027.</p>
+          <span class="link-card-cta">RSVP Now &rarr;</span>
+        </a>
+
+        <a href="#" class="link-card" target="_blank" rel="noopener">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+          </div>
+          <h3>Registry</h3>
+          <p>Browse our gift registry and find something you love.</p>
+          <span class="link-card-cta">View Registry &rarr;</span>
+        </a>
+
+        <a href="#" class="link-card" target="_blank" rel="noopener">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3>Honeymoon Fund</h3>
+          <p>Help us celebrate our first adventure together as newlyweds.</p>
+          <span class="link-card-cta">Contribute &rarr;</span>
+        </a>
+
+        <a href="#" class="link-card" target="_blank" rel="noopener">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3>Hotel Block</h3>
+          <p>Book your stay at our reserved hotel block for a discounted rate.</p>
+          <span class="link-card-cta">Book a Room &rarr;</span>
+        </a>
+
+        <a href="travel.html" class="link-card">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h3>Travel &amp; Directions</h3>
+          <p>Getting here from out of town? Find travel tips and directions.</p>
+          <span class="link-card-cta">Plan Your Trip &rarr;</span>
+        </a>
+
+        <a href="#" class="link-card" target="_blank" rel="noopener">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+          </div>
+          <h3>Share Your Photos</h3>
+          <p>Upload your photos from the big day to our shared album.</p>
+          <span class="link-card-cta">Upload Photos &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-names">Sarah &amp; Louis</p>
+      <p class="footer-date">June 12, 2027</p>
+      <p class="footer-location">Portland, OR</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

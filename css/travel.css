@@ -1,0 +1,239 @@
+/* ============================================================
+   TRAVEL PAGE STYLES
+   ============================================================ */
+
+/* Page hero — shorter than main hero */
+.travel-hero {
+  position: relative;
+  padding: 10rem 1.5rem 5rem;
+  text-align: center;
+  background: var(--color-navy-dark);
+  overflow: hidden;
+}
+
+.travel-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(100, 80, 180, 0.45) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 60% at 80% 80%, rgba(43, 56, 96, 0.5) 0%, transparent 60%),
+    linear-gradient(185deg, #120e2a 0%, #1a2340 20%, #141742 60%, #2f3b6d 100%);
+}
+
+.travel-hero-content {
+  position: relative;
+  z-index: 4;
+}
+
+.travel-hero .section-label {
+  color: var(--color-gold-light);
+}
+
+.travel-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.travel-hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-lavender);
+}
+
+/* Travel intro text */
+.travel-intro {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-muted);
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   GETTING THERE — info cards
+   ============================================================ */
+.travel-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.travel-info-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-rule);
+  padding: 2rem;
+  position: relative;
+}
+
+.travel-info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 5%, #8b6914 20%, #c49a3c 35%, #f0d980 48%, #fff8e7 50%, #f0d980 52%, #c49a3c 65%, #8b6914 80%, transparent 95%);
+  background-size: 200% 100%;
+  animation: foil-shimmer 5s ease-in-out infinite alternate;
+}
+
+.travel-info-card:nth-child(2)::before {
+  animation-delay: -1.7s;
+}
+
+.travel-info-card:nth-child(3)::before {
+  animation-delay: -3.3s;
+}
+
+.travel-info-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-periwinkle);
+  margin-bottom: 1rem;
+}
+
+.travel-info-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.travel-info-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.travel-info-card p {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   GETTING AROUND — transport items
+   ============================================================ */
+.transport-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--color-rule);
+}
+
+.transport-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.transport-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.transport-item p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.75;
+  max-width: 640px;
+}
+
+/* ============================================================
+   THINGS TO DO — category grid
+   ============================================================ */
+.things-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.things-category {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-rule);
+  padding: 2rem;
+}
+
+.things-category-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.things-category-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-periwinkle);
+  flex-shrink: 0;
+}
+
+.things-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.things-list li {
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-lavender-pale);
+}
+
+.things-list strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-navy);
+  margin-bottom: 0.2rem;
+}
+
+.things-list span {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Back section */
+.travel-back {
+  padding: 3rem 1.5rem;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .things-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .travel-hero {
+    padding: 8rem 1rem 3.5rem;
+  }
+
+  .things-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .things-category {
+    padding: 1.5rem;
+  }
+}
