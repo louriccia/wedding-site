@@ -237,10 +237,14 @@ const fadeTargets = [
   '.story-grid',
   '.timeline-item',
   '.event-card',
+  '.events-day-header',
   '.gallery-item',
   '.faq-item',
   '.link-card',
   '.links-intro',
+  '.stay-card',
+  '.stay-intro',
+  '.stay-note',
 ];
 
 const allFadeEls = document.querySelectorAll(fadeTargets.join(','));
@@ -259,7 +263,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 // Add stagger indices to grouped siblings
-document.querySelectorAll('.events-grid, .links-grid, .gallery-grid, .timeline').forEach(parent => {
+document.querySelectorAll('.events-grid, .links-grid, .gallery-grid, .stay-grid, .timeline').forEach(parent => {
   Array.from(parent.children).forEach((child, i) => {
     child.dataset.fadeDelay = i;
   });

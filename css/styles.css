@@ -362,6 +362,15 @@ button {
   margin-bottom: 2rem;
 }
 
+.hero-eyebrow-text {
+  display: flex;
+  align-items: center;
+}
+
+.hero-eyebrow-sep {
+  margin: 0 0.5em;
+}
+
 .hero-eyebrow::before,
 .hero-eyebrow::after {
   content: '';
@@ -728,10 +737,90 @@ button {
 /* ============================================================
    EVENTS
    ============================================================ */
+/* Day columns sit side by side so all three cards share one row.
+   Column widths are sized so every card ends up the same width:
+   3rem between days, 1.5rem between cards within a day. */
+.events-days {
+  display: grid;
+  grid-template-columns: calc((100% - 4.5rem) / 3) 1fr;
+  column-gap: 3rem;
+}
+
+/* Both days stretch to the same height so every card lines up */
+.events-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.events-day .events-grid {
+  flex: 1;
+}
+
+/* Vertical rule between Friday and Saturday, centered in the column gap */
+.events-day+.events-day::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--color-lavender) 18%, var(--color-lavender) 82%, transparent);
+}
+
+/* Day label with hairline rules running out to either side */
+.events-day-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.events-day-header::before,
+.events-day-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-lavender));
+}
+
+.events-day-header::after {
+  background: linear-gradient(90deg, var(--color-lavender), transparent);
+}
+
+.events-day-heading {
+  text-align: center;
+}
+
+.events-day-name {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--color-navy);
+}
+
+.events-day-date {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-periwinkle);
+}
+
 .events-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.events-grid--one {
+  grid-template-columns: 1fr;
+}
+
+.events-grid--two {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .event-card {
@@ -764,6 +853,11 @@ button {
   animation-delay: -3.3s;
 }
 
+/* Keep the first card of each day out of phase with the others */
+.events-grid--two .event-card:nth-child(1)::before {
+  animation-delay: -3.3s;
+}
+
 .event-icon {
   width: 36px;
   height: 36px;
@@ -785,7 +879,7 @@ button {
 }
 
 .event-detail {
-  font-size: 0.87rem;
+  font-size: 1rem;
   color: var(--color-muted);
   margin-bottom: 0.4rem;
 }
@@ -797,6 +891,96 @@ button {
 
 .event-card .btn {
   margin-top: 1.5rem;
+}
+
+/* ============================================================
+   ACCOMMODATIONS
+   ============================================================ */
+.stay-intro {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-muted);
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stay-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.stay-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-rule);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.stay-card:hover {
+  border-color: var(--color-periwinkle);
+  box-shadow: 0 4px 20px rgba(123, 143, 212, 0.12);
+  transform: translateY(-2px);
+}
+
+.stay-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.stay-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-navy);
+}
+
+.stay-tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 0.1rem 0.5rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.stay-meta {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-periwinkle);
+  margin: 0.35rem 0 0.85rem;
+}
+
+.stay-desc {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.stay-cta {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-periwinkle);
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.stay-note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
+  max-width: 640px;
+  margin: 2.5rem auto 0;
 }
 
 /* ============================================================
@@ -1167,6 +1351,16 @@ button {
   margin-top: 0.75rem;
 }
 
+.faq-answer a {
+  color: var(--color-blue);
+  border-bottom: 1px solid currentColor;
+  transition: color var(--transition);
+}
+
+.faq-answer a:hover {
+  color: var(--color-periwinkle);
+}
+
 /* ============================================================
    IMPORTANT LINKS
    ============================================================ */
@@ -1355,6 +1549,16 @@ button {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
+  /* Days stack again — one card per row */
+  .events-days {
+    grid-template-columns: 1fr;
+    row-gap: 3.5rem;
+  }
+
+  .events-day+.events-day::before {
+    content: none;
+  }
+
   .events-grid {
     grid-template-columns: 1fr;
     max-width: 480px;
@@ -1367,6 +1571,12 @@ button {
 
   .link-card--featured {
     grid-column: span 2;
+  }
+
+  .stay-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 0 auto;
   }
 
   .gallery-grid {
@@ -1467,6 +1677,21 @@ button {
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 140px;
+  }
+
+  /* Stack date and location on their own lines */
+  .hero-eyebrow {
+    align-items: center;
+  }
+
+  .hero-eyebrow-text {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-indent: 0.28em;
+  }
+
+  .hero-eyebrow-sep {
+    display: none;
   }
 
   .countdown-inner {
