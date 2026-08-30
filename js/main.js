@@ -427,7 +427,26 @@ allFadeEls.forEach(el => observer.observe(el));
     { src: 'selfies/Snapchat-1704615897.webp', date: 'December 2025', location: 'Savannah, GA' },
     { src: 'selfies/Snapchat-1908219670.webp', date: 'Fall 2022', location: 'Eugene, OR' },
     { src: 'selfies/Snapchat-2063169310.webp', date: 'Winter 2023?', location: '???' },
-    { src: 'selfies/Snapchat-904925079.webp', date: '???', location: 'Greenville, NC' },
+    { src: 'selfies/lincoln city - jan 21 - first photo.jpg', date: 'January 2021', location: 'Lincoln City, OR', flag: 'Our First Photo Together' },
+    { src: 'selfies/hilo hawaii may 21.jpg', date: 'May 2021', location: 'Hilo, HI' },
+    { src: 'selfies/hawaii.jpg', date: 'May 2021', location: 'Hawaii' },
+    { src: 'selfies/otter rock june 21.jpg', date: 'June 2021', location: 'Otter Rock, OR' },
+    { src: 'selfies/grangeville idaho jul 21.jpg', date: 'July 2021', location: 'Grangeville, ID' },
+    { src: 'selfies/newport sep 21.jpg', date: 'September 2021', location: 'Newport, OR' },
+    { src: 'selfies/Seattle - oct 22.jpg', date: 'October 2022', location: 'Seattle, WA' },
+    { src: 'selfies/brook green gardens -sc, dec 22.jpg', date: 'December 2022', location: 'Brookgreen Gardens, SC' },
+    { src: 'selfies/chichanitza mx - dec 22.jpg', date: 'December 2022', location: 'Chichén Itzá, Mexico' },
+    { src: 'selfies/troutdale or nov 23.jpg', date: 'November 2023', location: 'Troutdale, OR', flag: 'Our Future Wedding Site' },
+    { src: 'selfies/Eugene Jan 24.jpg', date: 'January 2024', location: 'Eugene, OR' },
+    { src: 'selfies/salem mar 24.jpg', date: 'March 2024', location: 'Salem, OR' },
+    { src: 'selfies/wilmington (nc aquarium) apr 2024.jpg', date: 'April 2024', location: 'NC Aquarium, Wilmington, NC' },
+    { src: 'selfies/folly beach may 24.jpg', date: 'May 2024', location: 'Folly Beach, SC' },
+    { src: 'selfies/folly beach may 24 2.jpg', date: 'May 2024', location: 'Folly Beach, SC' },
+    { src: 'selfies/spokane wa sep 24.jpg', date: 'September 2024', location: 'Spokane, WA' },
+    { src: 'selfies/national arboritum may 25.jpg', date: 'May 2025', location: 'National Arboretum, Washington, DC' },
+    { src: 'selfies/wdw sep 25.jpg', date: 'September 2025', location: 'Walt Disney World, FL' },
+    { src: 'selfies/PXL_20260529_032022761.jpg', date: 'May 2026', location: 'Troutdale, OR' },
+    { src: 'selfies/little wa jun 26.jpg', date: 'June 2026', location: 'Washington, NC' },
   ];
 
   // Shuffle order
@@ -445,10 +464,13 @@ allFadeEls.forEach(el => observer.observe(el));
   const caption = document.querySelector('.story-slide-caption');
   const captionDate = caption.querySelector('.story-slide-date');
   const captionLocation = caption.querySelector('.story-slide-location');
+  const captionFlag = caption.querySelector('.story-slide-flag');
 
   function updateCaption(item) {
     captionDate.textContent = item.date;
     captionLocation.textContent = item.location;
+    captionFlag.textContent = item.flag || '';
+    captionFlag.hidden = !item.flag;
   }
 
   let front = imgs[1]; // visible on top

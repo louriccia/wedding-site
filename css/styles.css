@@ -644,6 +644,23 @@ button {
   transition: opacity 0.45s ease;
 }
 
+.story-slide-flag {
+  display: inline-block;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold-light);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  margin-bottom: 0.5rem;
+  background: rgba(14, 10, 40, 0.35);
+}
+
+.story-slide-flag[hidden] {
+  display: none;
+}
+
 .story-slide-date {
   display: block;
   font-family: var(--font-serif);
@@ -868,6 +885,7 @@ button {
 .event-icon svg {
   width: 100%;
   height: 100%;
+  fill: currentColor;
 }
 
 .event-card h3 {
@@ -893,6 +911,14 @@ button {
   margin-top: 1.5rem;
 }
 
+.events-note {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
 /* ============================================================
    ACCOMMODATIONS
    ============================================================ */
@@ -907,8 +933,54 @@ button {
 
 .stay-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  align-items: stretch;
+}
+
+.stay-card--featured {
+  position: relative;
+  border-color: var(--color-periwinkle);
+  background: linear-gradient(180deg, rgba(123, 143, 212, 0.08), var(--color-card-bg) 55%);
+  box-shadow: 0 4px 24px rgba(123, 143, 212, 0.14);
+  padding: 2.5rem 1.75rem 2.25rem;
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+}
+
+.stay-card--featured::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-gold);
+}
+
+.stay-card--featured:hover {
+  box-shadow: 0 8px 30px rgba(123, 143, 212, 0.2);
+}
+
+.stay-card--featured h3 {
+  font-size: 1.4rem;
+}
+
+.stay-card--featured .stay-desc {
+  flex: 1;
+}
+
+.stay-block {
+  font-size: 0.85rem;
+  color: var(--color-navy);
+  border-left: 2px solid var(--color-gold);
+  padding: 0.15rem 0 0.15rem 1rem;
+  margin: 0.25rem 0 1.25rem;
+}
+
+.stay-block strong {
+  font-weight: 600;
+  color: var(--color-navy);
 }
 
 .stay-card {
@@ -1577,6 +1649,11 @@ button {
     grid-template-columns: 1fr;
     max-width: 560px;
     margin: 0 auto;
+  }
+
+  .stay-card--featured {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .gallery-grid {

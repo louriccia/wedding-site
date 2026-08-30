@@ -75,6 +75,7 @@
           <img class="story-photo" src="selfies/download_20210213_140606.webp" alt="" aria-hidden="true" />
           <img class="story-photo" src="selfies/download_20210213_140606.webp" alt="Sarah and Louis" />
           <div class="story-slide-caption">
+            <span class="story-slide-flag" hidden></span>
             <span class="story-slide-date"></span>
             <span class="story-slide-location"></span>
           </div>
@@ -95,7 +96,7 @@
           <div class="timeline">
             <div class="timeline-item">
               <img class="timeline-dot" src="wisteria/flower 6.png" alt="" aria-hidden="true">
-              <div class="timeline-date">November 2020</div>
+              <div class="timeline-date">October 2020</div>
               <div class="timeline-body">
                 <h3>It's a match!</h3>
                 <p>Sarah and Louis first started talking on the dating app Hinge. Louis made the first move.</p>
@@ -103,10 +104,10 @@
             </div>
             <div class="timeline-item">
               <img class="timeline-dot" src="wisteria/flower 5.png" alt="" aria-hidden="true">
-              <div class="timeline-date">December 2020</div>
+              <div class="timeline-date">November 2020</div>
               <div class="timeline-body">
                 <h3>Our first date</h3>
-                <p>Sarah and Louis went on their first date at an Italian restaurant.</p>
+                <p>Sarah and Louis went on their first date at a little coffee shop in Junction City.</p>
               </div>
             </div>
             <!-- <div class="timeline-item">
@@ -138,7 +139,7 @@
               <div class="timeline-date">December 2025</div>
               <div class="timeline-body">
                 <h3>The Proposal</h3>
-                <p>Placeholder description of the engagement story.</p>
+                <p>Louis proposed to Sarah on a cold beach in Emerald Isle, NC.</p>
               </div>
             </div>
             <div class="timeline-item">
@@ -157,7 +158,6 @@
   <!-- EVENTS -->
   <section class="section section-alt" id="events">
     <div class="container">
-      <div class="section-label">Events</div>
       <h2 class="section-title">The Wedding Weekend</h2>
       <div class="events-days">
 
@@ -172,18 +172,18 @@
           <div class="events-grid events-grid--one">
             <article class="event-card">
               <div class="event-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                  <path d="M8 3h8l-.8 5a3.2 3.2 0 0 1-6.4 0L8 3z" />
-                  <path d="M12 13v7" />
-                  <path d="M9 20.5h6" />
+                <svg viewBox="0 0 640 640">
+                  <path
+                    d="M201.9 96L193.9 112L217.9 160L262.1 160L286.1 112L278.1 96L201.9 96zM318.3 119.2L293.7 168.4C364.6 191.1 416 257.6 416 336.1C416 394.4 387.7 446.1 344 478.1C335.2 471.8 327.5 463.9 321.2 455C359.1 429.1 384 385.5 384 336.1C384 308.6 376.3 282.8 362.9 260.9C301.4 277.3 256 333.4 256 400.1C256 479.6 320.5 544.1 400 544.1C479.5 544.1 544 479.6 544 400.1C544 339.2 506.2 287.2 452.8 266.1C448.4 252.7 442.8 239.9 436.1 227.8C516 244.5 576 315.3 576 400.1C576 497.3 497.2 576.1 400 576.1C344.7 576.1 295.3 550.6 263 510.6C255.5 511.6 247.8 512.1 240 512.1C142.8 512.1 64 433.3 64 336.1C64 257.6 115.4 191.2 186.3 168.4L161.7 119.2C159.4 114.7 159.4 109.4 161.7 104.9L177.7 72.9C180.4 67.4 185.9 64 192 64L288 64C294.1 64 299.6 67.4 302.3 72.8L318.3 104.8C320.6 109.3 320.6 114.6 318.3 119.1zM243.2 480C230.9 456 224 428.8 224 400C224 323.3 273.1 258 341.6 233.9C315.6 208 279.7 192 240 192C160.5 192 96 256.5 96 336C96 415.5 160.5 480 240 480C241.1 480 242.1 480 243.2 480z" />
                 </svg>
               </div>
               <h3>Welcome Social</h3>
-              <p class="event-detail"><strong>Time:</strong> 6:00 PM</p>
-              <p class="event-detail"><strong>Venue:</strong> Placeholder Welcome Party Venue</p>
-              <p class="event-detail"><strong>Address:</strong> 789 Placeholder Road, City, State 00000</p>
+              <p class="event-detail"><strong>Time:</strong> 5:30 PM</p>
+              <p class="event-detail"><strong>Venue:</strong> Troutdale Station Food Carts</p>
+              <p class="event-detail"><strong>Address:</strong> 151 SW 257th Dr, Troutdale, OR 97060</p>
               <p class="event-detail"><strong>Dress Code:</strong> Casual</p>
-              <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Troutdale+Station+Food+Carts%2C+151+SW+257th+Dr%2C+Troutdale%2C+OR+97060"
+                target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Get Directions</a>
             </article>
           </div>
         </div>
@@ -196,54 +196,57 @@
             </div>
           </div>
 
-          <div class="events-grid events-grid--two">
+          <div class="events-grid events-grid--one">
             <article class="event-card">
               <div class="event-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
-                  <circle cx="12" cy="9" r="2.5" />
-                </svg>
-              </div>
-              <h3>Ceremony</h3>
-              <p class="event-detail"><strong>Time:</strong> 4:00 PM</p>
-              <p class="event-detail"><strong>Venue:</strong> Placeholder Ceremony Venue</p>
-              <p class="event-detail"><strong>Address:</strong> 123 Placeholder Street, City, State 00000</p>
-              <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
-            </article>
-
-            <article class="event-card">
-              <div class="event-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <svg viewBox="0 0 640 640">
                   <path
-                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                    d="M98.1 250.2C73.2 297.5 95.7 356 146 374.3C196.3 392.6 251.1 362.3 262.5 310L273.4 259.9L122 204.8L98.1 250.2zM280.2 228.3L299.4 139.7L179.3 96L137 176.2L280.2 228.3zM69.8 235.3L150.9 81.1C158.4 66.9 175.1 60.5 190.2 65.9L310.4 109.7C314 111 317.2 112.9 320 115.3C322.8 112.9 326 111 329.6 109.7L449.8 65.9C464.8 60.4 481.6 66.9 489.1 81.1L570.3 235.3C601.7 295 577.7 367.6 519.7 397.9L561.7 513.3L618.6 492.6C626.9 489.6 636.1 493.9 639.1 502.2C642.1 510.5 637.8 519.7 629.5 522.7C581.5 540.2 533.6 557.6 485.6 575.1C477.3 578.1 468.1 573.8 465.1 565.5C462.1 557.2 466.4 548 474.7 545L531.6 524.3L489.6 408.9C425.7 423 360.6 382.8 346.3 316.9L320.1 195.9L293.9 316.9C279.6 382.8 214.5 423.1 150.6 408.9L108.6 524.3L165.5 545C173.8 548 178.1 557.2 175.1 565.5C172.1 573.8 162.9 578.1 154.6 575.1C106.6 557.6 58.7 540.2 10.7 522.7C2.4 519.7-1.9 510.5 1.1 502.2C4.1 493.9 13.3 489.6 21.6 492.6L78.5 513.3L120.5 397.9C62.5 367.6 38.5 295 69.9 235.3zM541.9 250.2L518 204.8L366.6 259.9L377.5 310C388.8 362.3 443.7 392.5 494 374.3C544.3 356.1 566.8 297.6 541.9 250.2zM359.8 228.3L503 176.2L460.7 96L340.6 139.7L359.8 228.3z" />
                 </svg>
               </div>
-              <h3>Reception</h3>
-              <p class="event-detail"><strong>Time:</strong> 6:30 PM &ndash; 11:00 PM</p>
-              <p class="event-detail"><strong>Venue:</strong> Placeholder Reception Venue</p>
-              <p class="event-detail"><strong>Address:</strong> 456 Placeholder Avenue, City, State 00000</p>
-              <a href="#" class="btn btn-sm btn-ghost">Get Directions</a>
+              <h3>Ceremony &amp; Reception</h3>
+              <p class="event-detail"><strong>Time:</strong> TBD</p>
+              <p class="event-detail"><strong>Venue:</strong> The Troutdale House by the Sandy River</p>
+              <p class="event-detail"><strong>Address:</strong> 1310 SW Halsey St, Troutdale, OR 97060</p>
+              <p class="event-detail">Please park at The Troutdale House &mdash; a shuttle will take everyone to the
+                ceremony and back.</p>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=The+Troutdale+House+by+the+Sandy+River%2C+Troutdale%2C+OR"
+                target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Get Directions</a>
             </article>
           </div>
         </div>
 
       </div>
+
+      <p class="events-note">A more refined schedule will be released closer to the wedding date.</p>
     </div>
   </section>
 
   <!-- ACCOMMODATIONS -->
   <section class="section" id="accommodations">
     <div class="container">
-      <div class="section-label">Where to Stay</div>
       <h2 class="section-title">Accommodations</h2>
-      <p class="stay-intro">A few places to rest your head, all just a short drive from the celebration.</p>
       <div class="stay-grid">
+
+        <a class="stay-card stay-card--featured"
+          href="https://www.choicehotels.com/oregon/troutdale/comfort-inn-hotels/or218?mc=llgoxxpx" target="_blank"
+          rel="noopener">
+          <div class="stay-card-head">
+            <h3>Comfort Inn Troutdale-Portland East</h3>
+            <span class="stay-tag">Room Block</span>
+          </div>
+          <p class="stay-meta">Troutdale, OR</p>
+          <p class="stay-desc">Straightforward rooms with free breakfast at a friendly price point, right at the gateway
+            to the Columbia River Gorge.</p>
+          <p class="stay-block">We have a block of rooms reserved here. Mention the
+            <strong>Snow-LaRiccia wedding</strong> when you book to get the discounted rate.
+          </p>
+          <span class="stay-cta">Book a Room &rarr;</span>
+        </a>
 
         <a class="stay-card" href="https://www.mcmenamins.com/edgefield" target="_blank" rel="noopener">
           <div class="stay-card-head">
             <h3>McMenamins Edgefield</h3>
-            <span class="stay-tag">Our Pick</span>
           </div>
           <p class="stay-meta">Troutdale, OR</p>
           <p class="stay-desc">A sprawling historic estate with gardens, on-site restaurants and bars, a brewery and
@@ -263,33 +266,7 @@
           <span class="stay-cta">Book a Room &rarr;</span>
         </a>
 
-        <a class="stay-card" href="https://www.choicehotels.com/oregon/troutdale/comfort-inn-hotels/or218?mc=llgoxxpx"
-          target="_blank" rel="noopener">
-          <div class="stay-card-head">
-            <h3>Comfort Inn Columbia Gorge Gateway</h3>
-          </div>
-          <p class="stay-meta">Troutdale, OR</p>
-          <p class="stay-desc">Straightforward rooms with free breakfast at a friendly price point, right at the gateway
-            to the Columbia River Gorge.</p>
-          <span class="stay-cta">Book a Room &rarr;</span>
-        </a>
-
-        <a class="stay-card"
-          href="https://www.bestwestern.com/en_US/book/hotel-rooms.38140.html?iata=00171880&amp;ssob=BLBWI0004G&amp;cid=BLBWI0004G:google:gmb:38140"
-          target="_blank" rel="noopener">
-          <div class="stay-card-head">
-            <h3>Best Western Plus Cascade Inn &amp; Suites</h3>
-          </div>
-          <p class="stay-meta">Troutdale, OR</p>
-          <p class="stay-desc">Roomy standard rooms and suites with free breakfast, a few minutes up the road from the
-            other Troutdale hotels.</p>
-          <span class="stay-cta">Book a Room &rarr;</span>
-        </a>
-
       </div>
-      <p class="stay-note">We don&rsquo;t have a room block reserved just yet &mdash; we&rsquo;ll update this page once
-        we do. In the meantime, June books up early in the Gorge, so we&rsquo;d suggest reserving something refundable
-        soon.</p>
     </div>
   </section>
 
@@ -371,16 +348,9 @@
             <select id="rsvp-guests" name="guests">
               <option value="1">1</option>
               <option value="2">2</option>
-            </select>
-          </div>
-
-          <div class="rsvp-field">
-            <label for="rsvp-meal">Meal Preference</label>
-            <select id="rsvp-meal" name="meal">
-              <option value="">Please select&hellip;</option>
-              <option value="option-a">Option A</option>
-              <option value="option-b">Option B</option>
-              <option value="option-c">Option C</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </div>
 
@@ -420,7 +390,6 @@
   <!-- FAQ -->
   <section class="section section-alt" id="faq">
     <div class="container container--narrow">
-      <div class="section-label">Q&amp;A</div>
       <h2 class="section-title">Frequently Asked Questions</h2>
       <div class="faq-list">
 
@@ -442,8 +411,9 @@
         <details class="faq-item">
           <summary class="faq-question">Are children welcome?</summary>
           <div class="faq-answer">
-            <p>Please include your children in your RSVP if you plan to attend with them. We do not plan to provide
-              childcare during the event.</p>
+            <p>Children are welcome. Please include your children in your RSVP if you plan to attend with them. Some
+              entertainment for
+              children will be provided.</p>
           </div>
         </details>
 
@@ -458,8 +428,8 @@
         <details class="faq-item">
           <summary class="faq-question">Are there hotel room blocks available?</summary>
           <div class="faq-answer">
-            <p>Not yet &mdash; we&rsquo;ll update the site if that changes. In the meantime, see
-              <a href="#accommodations">Accommodations</a> for a list of hotels near the venue in Troutdale.
+            <p>Yes. We have reserved a block of rooms at the Comfort Inn Troutdale-Portland East. Please mention the
+              <strong>Snow-Lariccia wedding</strong> when booking to receive the discounted rate.
             </p>
           </div>
         </details>
@@ -467,17 +437,16 @@
         <details class="faq-item">
           <summary class="faq-question">Will there be transportation between venues?</summary>
           <div class="faq-answer">
-            <p>Placeholder transportation information. A shuttle will be available between the ceremony venue (Crystal
+            <p>A shuttle will be provided from the reception venue (Troutdale House) to the ceremony venue (Crystal
               Springs)
-              and the reception venue (Troutdale House).</p>
+              and back.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">Can I take photos during the ceremony?</summary>
           <div class="faq-answer">
-            <p>We are having an [unplugged/plugged-in] ceremony. Placeholder details about photography policy during the
-              ceremony and reception.</p>
+            <p>Please refrain from taking photos during the ceremony to ensure the moment is not disrupted.</p>
           </div>
         </details>
 
@@ -489,6 +458,14 @@
           </div>
         </details>
 
+        <details class="faq-item">
+          <summary class="faq-question">Do you have a registry?</summary>
+          <div class="faq-answer">
+            <p>We will add a link to a registry closer to the wedding date. We kindly ask you to refine from bringing
+              large items to the wedding as we would like to avoid shipping things back to North Carolina.</p>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -496,9 +473,7 @@
   <!-- IMPORTANT LINKS -->
   <section class="section" id="links">
     <div class="container">
-      <div class="section-label">Get Involved</div>
       <h2 class="section-title">Important Links</h2>
-      <p class="links-intro">Everything you need, all in one place.</p>
       <div class="links-grid">
 
         <a href="#" class="link-card link-card--featured rsvp-open">
