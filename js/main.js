@@ -730,17 +730,16 @@ allFadeEls.forEach(el => observer.observe(el));
     submitText.hidden = true;
     submitLoading.hidden = false;
 
-    const data = {
-      name: form.elements.name.value.trim(),
-      email: form.elements.email.value.trim(),
-      attending: form.elements.attending.value,
-      guests: form.elements.guests.value,
-      meal: form.elements.meal.value,
-      dietary: form.elements.dietary.value.trim(),
-      song: form.elements.song.value.trim(),
-    };
-
     try {
+      const data = {
+        name: form.elements.name.value.trim(),
+        email: form.elements.email.value.trim(),
+        attending: form.elements.attending.value,
+        guests: form.elements.guests.value,
+        dietary: form.elements.dietary.value.trim(),
+        song: form.elements.song.value.trim(),
+      };
+
       const res = await fetch(RSVP_SCRIPT_URL, {
         method: 'POST',
         body: JSON.stringify(data),
