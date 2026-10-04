@@ -606,13 +606,15 @@ allFadeEls.forEach(el => observer.observe(el));
    RSVP MODAL
    ============================================================ */
 (() => {
-  const RSVP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwn1QRWCcaDBVc4oQhOQVJYuFs7YsOvZnGx75nc4B6aIzcNretHmxSbulslvq7DKrSOeg/exec';
+  const RSVP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxSlRSfvBuPPawhwVH4o89SXzJTV36D_eGGBzuZYUVbESOaSebHovCswsSS1fiyM8ktMw/exec';
 
   const modal = document.getElementById('rsvp-modal');
   const closeBtn = document.getElementById('rsvp-close');
   const form = document.getElementById('rsvp-form');
   const attendingSelect = document.getElementById('rsvp-attending');
   const attendingFields = document.getElementById('rsvp-attending-fields');
+  const kidsToggle = document.getElementById('rsvp-kids-toggle');
+  const kidsFields = document.getElementById('rsvp-kids-fields');
   const submitBtn = document.getElementById('rsvp-submit');
   const submitText = submitBtn.querySelector('.rsvp-submit-text');
   const submitLoading = submitBtn.querySelector('.rsvp-submit-loading');
@@ -641,6 +643,7 @@ allFadeEls.forEach(el => observer.observe(el));
     form.reset();
     form.hidden = false;
     attendingFields.hidden = true;
+    setKidsOpen(false);
     successDiv.hidden = true;
     errorDiv.hidden = true;
     submitBtn.disabled = false;
@@ -670,6 +673,20 @@ allFadeEls.forEach(el => observer.observe(el));
   /* --- Conditional fields --- */
   attendingSelect.addEventListener('change', () => {
     attendingFields.hidden = attendingSelect.value !== 'yes';
+  });
+
+  function setKidsOpen(open) {
+    kidsFields.hidden = !open;
+    kidsToggle.setAttribute('aria-expanded', String(open));
+    kidsToggle.textContent = open ? '− No Children' : '+ Bringing Children?';
+    if (!open) {
+      form.elements.kids.value = '0';
+      form.elements.babies.value = '0';
+    }
+  }
+
+  kidsToggle.addEventListener('click', () => {
+    setKidsOpen(kidsFields.hidden);
   });
 
   /* --- Validation --- */
@@ -736,6 +753,8 @@ allFadeEls.forEach(el => observer.observe(el));
         email: form.elements.email.value.trim(),
         attending: form.elements.attending.value,
         guests: form.elements.guests.value,
+        kids: form.elements.kids.value,
+        babies: form.elements.babies.value,
         dietary: form.elements.dietary.value.trim(),
         song: form.elements.song.value.trim(),
       };

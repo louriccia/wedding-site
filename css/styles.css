@@ -1233,7 +1233,17 @@ button {
 }
 
 .rsvp-modal .section-title {
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.rsvp-intro {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin: 0 0 1.75rem;
 }
 
 .rsvp-field {
@@ -1787,4 +1797,18 @@ button {
     padding: 2rem 1.25rem;
     max-height: 90vh;
   }
+}
+
+.rsvp-kids-toggle {
+  margin-bottom: 1.25rem;
+}
+
+.rsvp-kids-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
+.rsvp-kids-fields[hidden] {
+  display: none;
 }

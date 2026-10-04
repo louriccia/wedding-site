@@ -319,6 +319,8 @@
 
       <div class="section-label">RSVP</div>
       <h2 class="section-title" id="rsvp-modal-title">We&rsquo;d Love to Hear From You</h2>
+      <p class="rsvp-intro">Please only RSVP for the number of people on your invitation. If you&rsquo;d like
+        to bring additional guests, please reach out to us.</p>
 
       <form id="rsvp-form" class="rsvp-form" novalidate>
         <div class="rsvp-field">
@@ -342,8 +344,8 @@
 
         <div id="rsvp-attending-fields" class="rsvp-conditional" hidden>
           <div class="rsvp-field">
-            <label for="rsvp-guests">Number of Guests, including yourself (please only RSVP the number of people on your
-              invitation - if you'd like to bring additional guests please reach out to us)</label>
+            <label for="rsvp-guests">Number of Guests Age 10 &amp; Over <span class="rsvp-optional">(including
+                yourself)</span></label>
             <select id="rsvp-guests" name="guests">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -351,6 +353,33 @@
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
+          </div>
+
+          <button type="button" class="btn btn-ghost rsvp-kids-toggle" id="rsvp-kids-toggle" aria-expanded="false"
+            aria-controls="rsvp-kids-fields">+ Bringing Children?</button>
+
+          <div id="rsvp-kids-fields" class="rsvp-kids-fields" hidden>
+            <div class="rsvp-field">
+              <label for="rsvp-kids">Children (Ages 2&ndash;9)</label>
+              <select id="rsvp-kids" name="kids">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+            <div class="rsvp-field">
+              <label for="rsvp-babies">Babies (Under 2)</label>
+              <select id="rsvp-babies" name="babies">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
           </div>
 
           <div class="rsvp-field">
@@ -462,7 +491,9 @@
           <div class="faq-answer">
             <p>Yes &mdash; you can browse it on
               <a href="https://www.amazon.com/wedding/guest-view/1WZC3NM9ZIY9A" target="_blank"
-                rel="noopener">Amazon</a>.
+                rel="noopener">Amazon</a>, or contribute to our
+              <a href="https://registry.theknot.com/sarah-snow-louis-lariccia-june-2027-or/75762317" target="_blank"
+                rel="noopener">cash registry on The Knot</a>.
               We kindly ask you to refrain from bringing large items to the wedding as we would like to avoid shipping
               things back to North Carolina.
             </p>
@@ -482,11 +513,11 @@
         <a href="#" class="link-card link-card--featured rsvp-open">
           <div class="link-card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <path d="M20 12V22H4V12" />
-              <path d="M22 7H2v5h20V7z" />
-              <path d="M12 22V7" />
-              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+              <path d="M3 10l9 6 9-6" />
+              <path d="M3 10v11h18V10" />
+              <path d="M6 12V4h12v8" />
+              <path d="M9 8h6" />
+              <path d="M9 11h4" />
             </svg>
           </div>
           <h3>RSVP</h3>
@@ -507,6 +538,20 @@
           <p>Your attendance is gift enough! If you'd like to give us a physical gift, please mail it to
             our home address since we are traveling.</p>
           <span class="link-card-cta">View Registry &rarr;</span>
+        </a>
+
+        <a href="https://registry.theknot.com/sarah-snow-louis-lariccia-june-2027-or/75762317" class="link-card"
+          target="_blank" rel="noopener">
+          <div class="link-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="2" y="6" width="20" height="12" rx="2" />
+              <circle cx="12" cy="12" r="2.5" />
+              <path d="M6 12h.01M18 12h.01" />
+            </svg>
+          </div>
+          <h3>Cash Registry</h3>
+          <p>Prefer not to ship a gift? You can contribute to our cash fund on The Knot instead.</p>
+          <span class="link-card-cta">Give a Gift &rarr;</span>
         </a>
 
         <!-- Honeymoon Fund - hidden for now
